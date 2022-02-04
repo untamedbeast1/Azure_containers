@@ -5,7 +5,7 @@
 
 A container is basically a unit software that packages up code and all it's dependencies in one environment.
 For instance: An Application that requires a web servers (Apache2 or Nginx) and a database (SQL) can be managed in the same environment.
-Azure container instance is a simple way t run a container in Azure with out spinnign up a virtual machine.
+Azure container instance is a simple way to run a container in Azure with out spinnign up a virtual machine.
 
 This is a simple step by step guide on how to use a the Azure Container Instance
 PS: There are documentatuions on how to do this , however this is my attempt on explaining it in my own words.
@@ -23,7 +23,7 @@ Create an instance and input details, here is an example:
 <img width="808" alt="Screenshot 2022-01-11 at 02 26 34" src="https://user-images.githubusercontent.com/55625732/148878409-2f443892-78c2-4671-b4af-8efd3b3b6401.png">
 
 Step 3: Select the docker image you intend to use
-** For this example an alpine image was used from the docker from docker, but you can use the quick start images available.
+** For instance an alpine image can used from the docker from docker, but in this case the quick start images was used.
 https://hub.docker.com/r/rancher/alpine-git
 
 <img width="847" alt="Screenshot 2022-01-11 at 04 13 48" src="https://user-images.githubusercontent.com/55625732/148880019-42a673c9-22a0-4b7b-b24a-09935ac1fd0e.png">
@@ -35,12 +35,11 @@ Step 4: Select the size of your container. For this example 1.5GB was used
 
 <img width="285" alt="Screenshot 2022-01-11 at 04 32 00" src="https://user-images.githubusercontent.com/55625732/148881530-67cff041-a778-45ca-960f-1b9b88335ce7.png">
 
-Select a DNS name and Expose the TCP port or any port you intend to use, for this example I exposed the TCP port but remeber this can be further edited, 
-when you have access to you container
+Select a DNS name and Expose the TCP port or any port you intend to use, for this example I exposed the TCP port 80.
 
 <img width="809" alt="Screenshot 2022-01-11 at 02 32 39" src="https://user-images.githubusercontent.com/55625732/148881792-c17a42dd-524a-40f3-b9b9-3ed5fcc809cd.png">
 
-Click next and if done properly the resource (ACL) should be created it usually takes a few seconds to create, theresult should look like this:
+Click next and if done properly the resource (ACL) should be created it usually takes a few seconds to create, the result should look like this:
 
 <img width="848" alt="Screenshot 2022-01-11 at 02 39 10" src="https://user-images.githubusercontent.com/55625732/148882351-47ef69b7-47d2-456a-95cc-abe238e48ab6.png">
 
